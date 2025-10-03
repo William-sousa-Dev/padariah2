@@ -1,0 +1,87 @@
+/* BODY E HEADER */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff8f0;
+}
+
+header {
+    background-color: #f6c56f;
+    color: #4b2e2e;
+    text-align: center;
+    padding: 25px 0;
+    font-size: 28px;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* CARD BASE */
+.card {
+    background-color: #fffdf7;
+    border: 2px solid #f6c56f;
+    border-radius: 20px;
+    padding: 25px;
+    box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+}
+
+.card:hover { transform: translateY(-5px); }
+
+/* ======================
+   CADASTRO
+====================== */
+.cadastro-section { display: flex; justify-content: center; align-items: center; padding: 50px 20px; }
+.cadastro-card { width: 400px; }
+.cadastro-card h2 { text-align: center; color: #4b2e2e; margin-bottom: 25px; font-size: 26px; }
+.input-group { margin-bottom: 15px; }
+.input-group label { display: block; font-weight: bold; color: #4b2e2e; margin-bottom: 5px; }
+.input-group input {
+    width: 100%; padding: 10px 12px; border: 1px solid #e3a94b; border-radius: 10px;
+    outline: none; transition: 0.3s; font-size: 14px;
+}
+.input-group input:focus { border-color: #f6c56f; box-shadow: 0 0 5px rgba(246,197,111,0.5); }
+.cadastro-card button {
+    width: 100%; padding: 12px; margin-top: 20px; background-color: #f6c56f; color: #4b2e2e;
+    font-weight: bold; font-size: 16px; border: none; border-radius: 12px; cursor: pointer; transition: 0.3s;
+}
+.cadastro-card button:hover { background-color: #e3a94b; transform: scale(1.05); }
+
+/* ======================
+   PRODUTOS
+====================== */
+.produtos-section { width: 100%; max-width: 1000px; margin: 30px auto; }
+.produtos-section h2 { text-align: center; margin-bottom: 20px; color: #4b2e2e; font-size: 26px; }
+.grid-produtos {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 25px;
+}
+.produto-card {
+    background-color: #fffdf7; border: 2px solid #f6c56f; border-radius: 20px;
+    padding: 15px; text-align: center; box-shadow: 0 6px 12px rgba(0,0,0,0.1); transition: transform 0.2s;
+}
+.produto-card:hover { transform: scale(1.05); }
+.produto-card img {
+    width: 100px; height: 100px; object-fit: cover; margin-bottom: 10px; border-radius: 12px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.produto-card h3 { margin: 10px 0; color: #4b2e2e; }
+.produto-card p { font-weight: bold; color: #6d3f2a; }
+.produto-card button {
+    margin-top: 10px; padding: 8px 12px; background-color: #f6c56f; color: #4b2e2e;
+    font-weight: bold; border: none; border-radius: 12px; cursor: pointer; transition: 0.3s;
+}
+.produto-card button:hover { background-color: #e3a94b; }
+
+/* ======================
+   CARRINHO
+====================== */
+.carrinho-section { width: 100%; max-width: 600px; margin: 40px auto; }
+#carrinho li {
+    background: #fff6e0; border-left: 5px solid #e3a94b; padding: 8px; border-radius: 10px;
+    margin-bottom: 8px; color: #4b2e2e; font-weight: bold;
+}
+.carrinho-section button {
+    width: 100%; padding: 12px; margin-top: 15px; background-color: #f6c56f; color: #4b2e2e;
+    font-weight: bold; font-size: 16px; border: none; border-radius: 12px; cursor: pointer; transition: 0.3s;
+}
+.carrinho-section button:hover { background-color: #e3a94b; transform: scale(1.05); }
